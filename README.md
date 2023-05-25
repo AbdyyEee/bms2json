@@ -33,7 +33,7 @@ color.read("sample.bmsc")
 ```
 Writing 
 ```py
-source.write("sample.json")
-message.write("sample.json")
-color.write("sample.json")
+source.write("sample.bmss")
+message.write("sample.bmsm")
+color.write("sample.bmsc")
 ```
