@@ -31,7 +31,6 @@ match arguments[0]:
     case "-export":
         file.read(in_path)
         file.to_json(out_path)
-        print("Done")
     case "-import":
         if not os.path.exists(out_path):
             auto_create = open(out_path, "w+")
@@ -40,3 +39,4 @@ match arguments[0]:
             f.truncate()
         file.from_json(in_path)
         file.write(out_path)
+print("Done")
