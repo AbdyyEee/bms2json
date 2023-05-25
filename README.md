@@ -2,8 +2,8 @@
 bms2json is a library built in Python3.11 that implements exporting and importing of `bmsm`, `bmsc`, and `bmss` file formats utilized in games such as Nintendo's Streetpass Mii Plaza. Included is a script as a front-end for preforming those actions.
 
 # Script Usage
-```py
-python bms.py [-export/-import/-new] [bmss/bmsc/bmsm] [in_path] [out_path]
+```console
+bms [-export/-import/-new] [bmss/bmsc/bmsm] [in_path] [out_path]
 ```
 
 # Class usage 
