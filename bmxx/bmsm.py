@@ -3,6 +3,7 @@ from bmxx.base import bms
 
 
 class bmsm(bms):
+    """A class that represents a binary message message file"""
     def __init__(self):
         super().__init__()
 

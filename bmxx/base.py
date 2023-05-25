@@ -4,8 +4,7 @@ from util.Writer import Writer
 from bmxx.header import Header
 
 class bms:
-    """A class that represents all bms files"""
-
+    """A base class for other format's classes to inherit from"""
     def __init__(self):
         self.header: Header = Header()
         self.data: dict = {}

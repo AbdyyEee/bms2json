@@ -21,9 +21,9 @@ from bmxx.source import Source
 from bmxx.message import Message 
 
 # Adding with default parameters
-source.add(Source())
-message.add(Message())
-color.add(Color())
+source.data["test_label"] = Source()
+color.data["test_label"] = Color()
+message.data["test_label"] = Message()
 ```
 Reading 
 ```py

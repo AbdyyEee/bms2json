@@ -3,6 +3,7 @@ from util.Writer import Writer
 
 
 class Header:
+    """A class that represents a header for a binary message file file"""
     def __init__(self):
         self.entry_count: int = 0
         self.string_count: int = 0

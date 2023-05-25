@@ -3,6 +3,7 @@ from util.Writer import Writer
 
 
 class Source:
+    """A class that represents a source entry used by a BMSS file"""
     def __init__(self):
         self.max_width: int = 0
         self.unk1: int = 0
