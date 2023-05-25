@@ -28,6 +28,8 @@ class Writer:
 
     def write_utf16_str(self, string: str):
         self.data.write(b"\xFF\xFE" + string.encode("UTF-16-LE"))
+        self.write_bytes(8 - len(string.encode("UTF-16-LE")) % 8)
+      
     
 
 

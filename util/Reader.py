@@ -9,8 +9,6 @@ class Reader:
     def skip(self, length: int) -> None:
         self.data.read(length)
 
-
-
     def tell(self) -> int:
         return self.data.tell()
 
