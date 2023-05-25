@@ -3,7 +3,7 @@ bms2json is a library built in Python3.11 that implements exporting and importin
 
 # Script Usage
 ```py
-python bms.py [-export/-import] [format] [in_path] out_path]
+python bms.py [-export/-import/-new] [format] [in_path] [out_path]
 ```
 
 # Class usage 
