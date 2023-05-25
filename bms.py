@@ -28,7 +28,6 @@ match arguments[0]:
     case "-export":
         file.read(in_path)
         file.to_json(out_path)
-        print("Done")
     case "-import":
         with open(out_path, "rb+") as f:
             f.truncate()
@@ -37,4 +36,5 @@ match arguments[0]:
     case "-new":
         auto_create = open(in_path, "w+")
         auto_create.close()
+print(f"Done.")
         
