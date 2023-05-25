@@ -34,3 +34,7 @@ match arguments[0]:
             f.truncate()
         file.from_json(in_path)
         file.write(out_path)
+    case "-new":
+        auto_create = open(in_path, "w+")
+        auto_create.close()
+        
