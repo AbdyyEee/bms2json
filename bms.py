@@ -1,10 +1,12 @@
 import sys
+import os
 from bmxx.bmsm import bmsm
 from bmxx.bmsc import bmsc
 from bmxx.bmss import bmss
 
 arguments = sys.argv[1:]
 extensions = ["bmsc", "bmss", "bmsm"]
+
 
 def get_format(format: str):
     match format:
@@ -14,6 +16,7 @@ def get_format(format: str):
             return bmsm()
         case "bmss":
             return bmss()
+
 
 extension = arguments[1].lower()
 in_path = arguments[2]
@@ -29,12 +32,11 @@ match arguments[0]:
         file.read(in_path)
         file.to_json(out_path)
     case "-import":
+        if not os.path.exists(out_path):
+            auto_create = open(out_path, "w+")
+            auto_create.close()
         with open(out_path, "rb+") as f:
             f.truncate()
         file.from_json(in_path)
         file.write(out_path)
-    case "-new":
-        auto_create = open(in_path, "w+")
-        auto_create.close()
-print(f"Done.")
-        
+print("Done")
