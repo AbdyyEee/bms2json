@@ -1,13 +1,15 @@
 from util.Reader import Reader
 from util.Writer import Writer
 
+
 class Message:
     """A class that represents a message entry in a BMSM file"""
+
     def __init__(self):
         self.source_label: str = ""
         self.message: str = ""
         self.x_scale: int = 0
-        self.y_scale: int = 0 
+        self.y_scale: int = 0
         self.secondary_source_label: str = ""
 
     def read(self, reader: Reader):
@@ -23,9 +25,3 @@ class Message:
         writer.write_alinged_nstr(str(self.x_scale))
         writer.write_alinged_nstr(str(self.y_scale))
         writer.write_alinged_nstr(self.secondary_source_label)
-    
-    
-        
-
-
-

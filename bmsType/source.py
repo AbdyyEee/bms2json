@@ -4,6 +4,7 @@ from util.Writer import Writer
 
 class Source:
     """A class that represents a source entry used by a BMSS file"""
+
     def __init__(self):
         self.max_width: int = 0
         self.unk1: int = 0
@@ -17,7 +18,7 @@ class Source:
         self.unk2: int = "nil"
         self.unk3: bool = False
         self.unk4: int = "nil"
-    
+
     def read(self, reader: Reader):
         self.max_width = int(reader.read_alinged_nstr())
         self.unk1 = int(reader.read_alinged_nstr())

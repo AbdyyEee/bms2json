@@ -4,6 +4,7 @@ from bmxx.base import bms
 
 class bmss(bms):
     """A class that represents a binary message source file"""
+
     def __init__(self):
         super().__init__()
 

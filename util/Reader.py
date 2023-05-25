@@ -34,7 +34,7 @@ class Reader:
             if string == "nil":
                 return "nil"
             return expected_type(string)
-            
+
         return string
 
     def read_utf16_str(self):
@@ -48,5 +48,6 @@ class Reader:
 
         self.seek_until_non_null()
         return message.decode("UTF-16")
+
     def read_uint32(self) -> int:
         return struct.unpack(f'<I', self.data.read(4))[0]

@@ -1,8 +1,10 @@
 from bmsType.color import Color
 from bmxx.base import bms
 
+
 class bmsc(bms):
     """A class that represents a binary message color file"""
+
     def __init__(self):
         super().__init__()
 

@@ -3,8 +3,10 @@ from util.Reader import Reader
 from util.Writer import Writer
 from bmxx.header import Header
 
+
 class bms:
     """A base class for other format's classes to inherit from"""
+
     def __init__(self):
         self.header: Header = Header()
         self.data: dict = {}

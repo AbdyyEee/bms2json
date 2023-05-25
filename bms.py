@@ -39,4 +39,3 @@ match arguments[0]:
             f.truncate()
         file.from_json(in_path)
         file.write(out_path)
-print("Done")
