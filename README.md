@@ -46,3 +46,6 @@ source.write("sample.bmss")
 message.write("sample.bmsm")
 color.write("sample.bmsc")
 ```
+
+# Resource
+https://avsys.xyz/wiki/BMS_(File_Format)#BMS
